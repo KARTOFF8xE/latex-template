@@ -1,0 +1,11 @@
+**/*.aux
+**/*.fdb_latexmk
+**/*.fls
+**/*.lof
+**/*.log
+**/*.toc
+**/*.out
+**/*.bbl
+**/*.blg
+**/*.gz
+Projektarbeit/graphics/Unterschrift_Georg.png

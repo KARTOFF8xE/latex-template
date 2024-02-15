@@ -1,0 +1,55 @@
+\documentclass{article}
+
+\title{myTitle} % TODO
+
+\usepackage{selinput}% Auswahl der Dateikodierung (ansi,latin1,utf8,...)
+\SelectInputMappings{adieresis={ä},germandbls={ß},Euro={€}}% Zeichenzuordnung für selinput.sty
+\usepackage[T1]{fontenc}% Einstellung Fontencoding
+
+\usepackage{graphicx}
+\graphicspath{{./graphics/}}
+\usepackage{lipsum}
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath}
+\usepackage{MnSymbol}
+\usepackage{pgfplots}
+\usepackage{bbm}
+\usepackage[ngerman]{babel}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage[german]{cleveref}
+\usepackage{enumitem}
+\usepackage{varwidth}
+
+\setlength{\medskipamount}{15pt}
+
+\newcommand{\subsubsubsection}[1]{\medskip\noindent{\textbf{#1}}\\}
+\newcommand{\splitting}[1]{\noindent\underline{#1}}
+
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
+
+\pgfplotsset{compat=1.16}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+\input{sections/example.tex}
+
+% Sources
+\newpage
+\thispagestyle{plain}
+\bibliographystyle{IEEEtran}
+\bibliography{lib.bib}
+    
+\end{document}

@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/*.aux": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.lof": true,
+        "**/*.log": true,
+        "**/*.toc": true,
+        "**/*.out": true,
+        "**/*.bbl": true,
+        "**/*.blg": true,
+        "**/*.gz": true,
+        "**/.gitignore": false,
+    }
+}
